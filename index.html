@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="background">
+        <!--Le container est le bloc qui contient tout le jeu-->
+        <div class="container">
+            <h1>Le <span>juste</span> prix</h1>
+            <h3>Vous avez 5 chances pour trouver le juste prix !</h3>
+            <!--Game contient l'input, le button et les instructions-->
+            <div id="game">
+                <form id="choice">
+                    <input type="text" placeholder="Entrez votre prix (entre 0 et 30)" autocomplète="off">
+                    <button id="btn" type="submit">Valider</button>
+                    <div id="error">Vous devez entrer un chiffre (entre 0 et 10)</div>
+                </form>
+                <div id="instructions"></div>
+            </div>
+        </div>
+        <!--Again prend la place de la div Game quand le jeu et terminé-->
+        <div id="again">
+            <h2>Voulez-vous rejouer ?</h2>
+            <button id="restart">Rejouer</button>
+            <button id="stop">Quitter</button>
+        </div>
+        <!--Finish et le message qui s'affiche si le joueur ne veut plus jouer-->
+        <div id="finish"><p>Merci d'avoir joué !</p></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
